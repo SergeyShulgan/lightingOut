@@ -21,7 +21,8 @@
              "c:paymentViewApp", // Name of Aura Dependency app where c is namespace.
              function() { // Callback function
                  $Lightning.createComponent(
-                     "c:paymentView", // Name of Lightning Component where c is namespace.
+                     //"c:paymentView", // Name of Lightning Component where c is namespace.
+                     "c:paymentAuraView",
                      {}, // attribute parameters
                      "LightningAppDivId" // Id of the element where Lightning Component will be rendered.
                  );
