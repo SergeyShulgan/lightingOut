@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Headingsss</h1>
+<p>This is a paragraph.1</p>
+
+    <script src="https://tsia--tsiadev3.sandbox.my.salesforce-sites.com/lightning/lightning.out.js"></script>
+
+    <div id="LightningAppDivId">
+        <!-- Lightning Component will be included here. -->
+    </div>
+
+     <script>
+
+         $Lightning.use(
+             "c:paymentViewApp", // Name of Aura Dependency app where c is namespace.
+             function() { // Callback function
+                 $Lightning.createComponent(
+                     "c:paymentView", // Name of Lightning Component where c is namespace.
+                     {}, // attribute parameters
+                     "LightningAppDivId" // Id of the element where Lightning Component will be rendered.
+                 );
+             },
+             'https://tsia--tsiadev3.sandbox.my.salesforce-sites.com'
+         );
+     </script>
+
+
+</body>
+
+
+<script>
+console.log('hello');
+</script>
+</html>
